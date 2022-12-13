@@ -33,11 +33,7 @@ ss = ss.dropna()
 y = ss["sm_li"]
 X = ss[["income", "education", "parent", "married" , "female", "age" ]]
 
-X_train, X_test, y_train, y_test = train_test_split(X,
-                                                    y,
-                                                    stratify=y,       
-                                                    test_size=0.2,    
-                                                    random_state=987)
+X_train, X_test, y_train, y_test = train_test_split(X, y , stratify = y, test_size=0.2, random_state=987)
 
 lr = LogisticRegression(class_weight='balanced')
 
