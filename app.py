@@ -4,7 +4,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import altair as alt
 import sklearn as sk
 from sklearn.linear_model import LogisticRegression
